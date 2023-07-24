@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: yellow;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: bottom;
+  top:10;
+  right: 5;
+  bottom: 50;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: top;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 30px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+​.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industries in Sri Lanka<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="lacqer.html">Lacquer Work Industry</a>
+      <a href="wood.html">Wood Carvings Industry</a>
+      <a href="brassware.html">Brassware Industry</a>
+	  <a href="pottery.html">Pottery Industry</a>
+	  <a href="masks.html">Masks Industry</a>
+	  <a href="beeralu.html">Beeralu Industry</a>
+	  <a href="handloom.html">Handloom Industry</a>
+	  <a href="cane.html">Cane Industry</a>
+    </div>
+	</div>
+  <a href="photo.html">Photo Gallery</a>
+  <a href="sell.html">Order Here</a>  
+  </div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Masks Kolam 01.jpg" style="width:100%" width="1000" height="450">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Masks Kolam 02.jpg" style="width:100%" width="1000" height="400">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Masks Kolam 03.jpg" style="width:100%" width="1000" height="400">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Masks Kolam 04.jpg" style="width:100%" width="1000" height="400">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Masks Kolam 05.jpg" style="width:100%" width="1000" height="400">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Masks Raksha Naga_Raksha.jpg" style="width:100%" width="1000" height="400">
+  </div>
+
+     
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<div class="content">
+  <h1>Masks Industry</h1>
+  
+<h2>Raksha Masks of Sri Lanka</h2>
+A Raksha mask is a mask that Sri Lankans use a lot in festivals and cultural dances. Raksha means “demon” and the masks are apotropaic which means that it is intended to ward off evil. They are painted in vibrant colors, with bulging eyes and protruding tongues and they depict various types of demons.
+Raksha masks are the final aspect of the Kolam ritual, and they are a tribute to the Rakshasas, a race that earlier ruled Sri Lanka and could assume 24 different forms. But only a few of these forms are performed, some of which are:
+
+<h2>Sanni Masks</h2>
+The Sanni masks are used in healing ceremonies and worn by an edura (a Sri Lankan artist/exorcist). Apparently, there are eighteen different Sanni masks, each specializing in curing specific illnesses. These 18 dances (දහ අට සන්නිය) are the main dances of the Pahatharata, or low country, dancing form, which is one of the three main dancing forms of Sri Lanka. Below you can see some examples:
+
+<h2>Kolam Masks</h2>
+Kolam is another “low-country” tradition from Sri Lanka’s southern coast. Although it includes elements of ritual and even trance, it may be classified as a form of folk theatre. A loose plot binds several stock characters and scenes together. The actual play is usually based on a Buddhist Jataka story.
+The Kolam performance takes place in a round performance arena surrounded on three sides by the audience. At least two drummers provide its accompaniment. The narrator or master of ceremonies directs the performance and introduces the characters. He also sometimes speaks the characters’ lines or enters a dialogue with them. In earlier times, a Kolam performance lasted a whole night, but nowadays from two to three hours. Below you can see some different Kolam faces:
+
+  
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: yellow;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: bottom;
+  top:10;
+  right: 5;
+  bottom: 50;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: top;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 30px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+​.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industries in Sri Lanka<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="lacqer.html">Lacquer Work Industry</a>
+      <a href="wood.html">Wood Carvings Industry</a>
+      <a href="brassware.html">Brassware Industry</a>
+	  <a href="pottery.html">Pottery Industry</a>
+	  <a href="masks.html">Masks Industry</a>
+	  <a href="beeralu.html">Beeralu Industry</a>
+	  <a href="handloom.html">Handloom Industry</a>
+	  <a href="cane.html">Cane Industry</a>
+    </div>
+	</div>
+  <a href="photo.html">Photo Gallery</a>
+  <a href="sell.html">Order Here</a>  
+  </div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <img src="lacqer IMG-0366.png" style="width:100%" width="1000" height="350">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+    <img src="lacqer IMG-0369.jpg" style="width:100%" width="1000" height="350">
+  </div>
+      
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<div class="content">
+  <h1>Lacquer Work Industry</h1>
+   <p>
+  The laksha industry is one of the oldest and traditional industries in Sri Lanka. According to the folklore, Laksha artisans were among the eighteen castes who came to this country when the Sri Maha Bodhi arrived.
+  </p>
+  <p>
+  During the period of the Kandyan kingdom from the 15th to 18th Centuries, arts and crafts became highly appreciated and received royal patronage, which included the formation of guilds, the standardisation of payments, and even the imposition of penalties for lousy work. Lac-workers, or I-vaduvo, literally “arrow-makers,” were responsible for the wood-turning and ornamentation necessary for producing bows, arrows, spears, staves, bed-legs, banner poles, powder horns, oboes, and book covers.
+  </p>
+  <p>
+During this time the Kandyan kingdom was famous for its Laksha industry. The most well known areas for this industry are Matale-Hapuvida, Tangalle-Angulmaduwa, Kandy-Hurikaduwa, Balangoda-Pallekanda. Today there are very few Lac-workers who have been in the industry as full-time craftsmen. 
+  </p>
+  <p>
+Laksha is obtained from the larvae of the Laksha insect, which live in trees such as cones, masons, kappetiya and thalakiriya. Laksha colors are made by mixing Laksha with green and yellow by mixing with Sadilingam. Only red, yellow and black were the primary colors used in the Laksha industry in the past, but later colors such as blue, green and white came into use. Today, other colors such as purple, lead, copper, and gold are used to make machine-made dyes such as titanium.
+  </p>
+  <p>
+This design is done under two main techniques. That is, <b>nail work</b> and <b>lathe work.</b>
+  </p>
+  <p>
+The technique of using the finger-nails for Laksha works are called niyapoten veda. The lac-worker sits with a chatty (pot) containing a charcoal fire for decorating the objects with Laksha. First, the object is coated with the ground colour, after which it is warmed over the fire and the lac pressed and smoothed with the talipot leaf. When the design is complete, the lac is severed with the thumbnail and shined with the talipot leaf applying coconut oil. Coconut shell spoons, Flute, Sesath Poles, Coconut shell hammer shakers are some of the items made under this technique.
+  </p>
+  <p>
+The other technique is called Pattal Wada or “spool-work”. The object to be decorated is rotated on a lathe, and a hardened stick of lac is applied. The heat produced by the friction softens the lac and causes it to adhere to the object. This method is limited to objects that can be turned on a lathe. Most of the items made under this technique are rounded shape. Jewwerly boxes, Egg cup, Flower vass, Power bowl, Ashtrays are some of the popular laksha products.
+  </p>
+  <p>
+Main type of woods used in the production of Laksha products are Michelia champaca ( Ginisapu), Thespesia populnea ( Gansuriya) and Swietenia mahagoni ( Mahogony).
+  </p>
+  <p>
+Laksha artists are producing their crafts amidst a lot of hard work. They have a great deal of respect and devotion to this traditional craft for the production of high-quality goods. It is a privilege to bring this craft to the present amid various difficulties. This industry, which has been preserved from generation to generation since the days of kings, has today become an art form in which a minimal community is engaged. It would be invaluable if a program could be put in place that would encourage those involved in the industry to preserve such heritage for the future.
+
+  </p>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: yellow;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: bottom;
+  top:10;
+  right: 5;
+  bottom: 50;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: top;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 30px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+​.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industries in Sri Lanka<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="lacqer.html">Lacquer Work Industry</a>
+      <a href="wood.html">Wood Carvings Industry</a>
+      <a href="brassware.html">Brassware Industry</a>
+	  <a href="pottery.html">Pottery Industry</a>
+	  <a href="masks.html">Masks Industry</a>
+	  <a href="beeralu.html">Beeralu Industry</a>
+	  <a href="handloom.html">Handloom Industry</a>
+	  <a href="cane.html">Cane Industry</a>
+    </div>
+	</div>
+  <a href="photo.html">Photo Gallery</a>
+  <a href="sell.html">Order Here</a>  
+  </div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+    <img src="Brassware 1.jpg" style="width:100%" width="1000" height="350">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+    <img src="Brassware 2.jpg" style="width:100%" width="1000" height="350">
+  </div>
+       
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+<div class="content">
+  <h1>Brassware Industry</h1>
+   <p>
+  More than any other metal, brass adds a shine to a Sri Lankan home. Every Sri Lankan family owns a collection of traditional brassware, often a treasured heirloom passed down from generations. Central to the collection is the ornamental brass lamp,used to inaugurate almost every special function and ceremony. No Sri Lankan home is complete without one. Sri Lankans believe that lighting an oil lamp brings luck, and what better lamp to light than one made of ornate gleaming golden brass. Sri Lanka’s brassware industry, now very much a part of the country’s culture and national crafts, is widely believed to be a colonial Dutch import, although it is also possible that it arrived from the Indian subcontinent or was brought by the Arab traders who first visited the island. A thriving brass industry has existed across India from ancient times, while brassware was said to have been produced in the Middle East as far back as the fourth Century BC.
+   </p>
+   <p>
+Nevertheless, the country has a long history of metal work, with archaeological finds of smelting furnaces dating from the earliest times of human habitation on the island. The island is well known for its steel and copper crafts, said to have been so highly developed in ancient times, that the country was exporting steel to Damascus. Archeological findings of steel and copper surgical instruments have been discovered in the east central region, especially in the ancient city of Polonnaruwa. Bronze, which arrived in the eighth Century, also took firm root in the island. Nevertheless, there is no mention of brass products in ancient times. The village of Angulmaduwa, seven kilometres from Beliatta in the southern district of Hambantota, is said to have birthed the country’s first brassware. Famed for its skilled metal artisans, Angulmaduwa is said to have begun producing brass products after the Dutch occupation in the 17th Century.
+   </p>
+     
+  </div>
+</div>
+
+
+</body>
+</html>

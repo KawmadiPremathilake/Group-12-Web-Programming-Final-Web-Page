@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: red;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: yellow;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: yellow;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: bottom;
+  top:10;
+  right: 5;
+  bottom: 50;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+​.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+}
+</style>
+</head>
+
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industries in Sri Lanka<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="lacqer.html">Lacquer Work Industry</a>
+      <a href="wood.html">Wood Carvings Industry</a>
+      <a href="brassware.html">Brassware Industry</a>
+	  <a href="pottery.html">Pottery Industry</a>
+	  <a href="masks.html">Masks Industry</a>
+	  <a href="beeralu.html">Beeralu Industry</a>
+	  <a href="handloom.html">Handloom Industry</a>
+	  <a href="cane.html">Cane Industry</a>
+    </div>
+	</div>
+  <a href="photo.html">Photo Gallery</a>
+<a href="sell.html">Order Here</a>  
+  </div>
+
+<div>
+<video autoplay muted loop id="myVideo">
+  <source src="intro.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+</div>
+
+
+
+
+<div class="content">
+  <h1>Sri Lankan Handcrafts</h1>
+  <p>
+  Sri Lankan handicrafts are a perfect reflection of the country's history and culture. The crafts comprise a beautiful combination of traditional and modern designs, with intricate detailing and vibrant colors.
+  Batik textiles, hand-woven baskets, brasswork, leatherworks, handmade velvet paintings and pottery are some of the popular handicrafts, but the intricate wood carvings depicting religious folklore and mythology are the most notable.
+  Apart from traditional crafts, Sri Lanka produces contemporary designs that incorporate modern aesthetics. Handmade jewelry and accessories made from natural materials like coconut shells and seeds are also popular. These handicrafts are a must-see for anyone interested in the country's cultural heritage.
+</p>
+  
+</div>
+
+
+</body>
+</html>
